@@ -1,5 +1,7 @@
 from flask import Flask
 from flask import jsonify
+from datetime import datetime
+import pytz
 
 app = Flask(__name__)
 
@@ -16,6 +18,14 @@ def echo(name):
     print(f"This was placed in the url: new-{name}")
     val = {"new-name": name}
     return jsonify(val)
+
+@app.route("/time")
+def time():
+    print("Print EST time")
+    tz_NY = pytz.timezone('America/New_York') 
+    datetime_NY = datetime.now(tz_NY)
+    current_time_EST = datetime_NY.strftime("%H:%M:%S")
+    return current_time_EST
 
 
 if __name__ == "__main__":
