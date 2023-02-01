@@ -19,10 +19,16 @@ Depoly this Flask API project on Docker.
 1. write the `requirements.txt`
 2. write the `dockerfile`
 3. run `docker image build -t flask-api .`
-4. run `docker run -p 63333:5000 -d flask-api`
-5. visit `localhost:63333`
+4. run `docker run -p port:5000 -d flask-api`
+5. visit `localhost:port`
 
 Deploy the project on AWS
+
+1. clone the git repo
+2. run `docker image build -t flask-api .`
+3. run `docker run -p port:5000 -d flask-api`
+4. send http request `curl 127.0.0.1:port/time`
+
 
 ### Print time
 Print the current Eastern Standard Time
