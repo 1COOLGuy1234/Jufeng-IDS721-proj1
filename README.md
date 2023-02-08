@@ -1,3 +1,5 @@
+[![Docker Image CI](https://github.com/nogibjj/Jufeng-IDS721-proj1/actions/workflows/docker-image.yml/badge.svg)](https://github.com/nogibjj/Jufeng-IDS721-proj1/actions/workflows/docker-image.yml)
+
 # Cloud Continuous Delivery of Microservice (MLOps or Data Engineering Focused)
 
 ## Task
