@@ -14,7 +14,7 @@ Now the Flask API can work. I write some simple function to test the API functio
 
 ## Week2
 
-Depoly this Flask API project on Docker.
+### Depoly this Flask API project on Docker.
 
 1. write the `requirements.txt`
 2. write the `dockerfile`
@@ -22,17 +22,21 @@ Depoly this Flask API project on Docker.
 4. run `docker run -p port:5000 -d flask-api`
 5. visit `localhost:port`
 
-Deploy the project on AWS
+### Deploy the project on AWS
 
 1. clone the git repo
 2. run `docker image build -t flask-api .`
 3. run `docker run -p port:5000 -d flask-api`
 4. send http request `curl 127.0.0.1:port/time`
 
+## Week3
+
+1. Finished the github Action workflow. Automatically build docker image.
+2. Deploy the project in AWS App Runner.
+
 
 ### Print time
 Print the current Eastern Standard Time
 
-## TODO
-finish the github workflow
+
 
