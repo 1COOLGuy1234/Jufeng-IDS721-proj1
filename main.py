@@ -25,7 +25,7 @@ def time():
     tz_NY = pytz.timezone('America/New_York') 
     datetime_NY = datetime.now(tz_NY)
     current_time_EST = datetime_NY.strftime("%H:%M:%S")
-    return current_time_EST
+    return "Eastern Standard Time is " + current_time_EST
 
 
 if __name__ == "__main__":
